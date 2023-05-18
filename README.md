@@ -22,8 +22,8 @@
 
 | | | | |
 | :---------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
-|   <img width="1604" alt="Splash Page - Mobile" src="./project/screens/screen5.png">    |   <img width="1604" alt="Home Page - Mobile" src="./project/screens/screen6.png">   |   <img width="1604" alt="Time Capsule Memories - Mobile" src="./project/screens/screen7.png">   |
-|   <img width="1604" alt="Time Capsule: create new memory - Mobile" src="./project/screens/screen8.png">   |
+|   <img width="1203" alt="Splash Page - Mobile" src="./project/screens/screen5.png">    |   <img width="1203" alt="Home Page - Mobile" src="./project/screens/screen6.png">   |   <img width="1203" alt="Time Capsule Memories - Mobile" src="./project/screens/screen7.png">   |
+|   <img width="1203" alt="Time Capsule: create new memory - Mobile" src="./project/screens/screen8.png">   |
 <br>
 
 <p></p>

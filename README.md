@@ -100,7 +100,7 @@ The following tools were used in building the project:<br><br>
   <h3>Frontend</h3>
   <img width =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
   <img width =' 100px ' left='80px' right='100px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-  <img width =' 150px ' left='100px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"/>
+  <img width =' 110px ' left='100px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"/>
   <br>
   <img height =' 50px ' src="./project/logo/tailwind-css_logo.svg" />
   <br>

@@ -20,8 +20,8 @@
 </div>
 <br>
 
-|                                                                                     |                                                                                   |                                                                                        |
-| :---------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| | | | |
+| :---------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 |   <img width="1604" alt="Splash Page - Mobile" src="./project/screens/screen5.png">    |   <img width="1604" alt="Home Page - Mobile" src="./project/screens/screen6.png">   |   <img width="1604" alt="Time Capsule Memories - Mobile" src="./project/screens/screen7.png">   |
 |   <img width="1604" alt="Time Capsule: create new memory - Mobile" src="./project/screens/screen8.png">   |
 <br>
@@ -67,20 +67,17 @@ The following tools were used in building the project:<br><br>
 |      Utility-first CSS Framework (Frontend)      |       TAILWIND CSS        |     https://tailwindcss.com/      |
 |    Tool for transforming CSS with JavaScript     |         POST CSS          |       https://postcss.org/                  |
 |      Graphic components (Frontend, Mobile)       |        LUCIDE-REACT       |    https://lucide.dev/                  |
-<!-- |      Graphic components (Frontend, Mobile)       |      PHOSPHOR ICONS       |    https://phosphoricons.com/    | -->
 |    UI Utility-first Component Library (Mobile)   |        NATIVE BASE        |      https://nativebase.io/        |
 |        Navigation between pages (Mobile)         |     REACT NAVIGATION      |  https://reactnavigation.org/  |
 |                Database (Backend)                |          SQLITE           | https://www.sqlite.org/index.html            |
 |  Promise based HTTP client - browser & Node.js   |           AXIOS           |      https://axios-http.com/       |
 |             UI Components for React              |         RADIX-UI          |     https://www.radix-ui.com/         |
 |  Node.js and TypeScript ORM (Backend, Database)  |          PRISMA           |      https://www.prisma.io/            |
-<!-- |     Tool to build frontend faster (Frontend)     |          VITE.JS          |        https://vitejs.dev/                  | -->
 <br>
 
 <div align = 'center'>
   <h3>Backend | API</h3>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
-  <!-- <img height =' 100px ' left=' 20px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/> -->
   <img height =' 100px ' left='80px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
   <!-- <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" /> -->
   <br>
@@ -98,7 +95,6 @@ The following tools were used in building the project:<br><br>
   <br>
   <h3>UX/UI</h3>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-  <!-- <img height =' 100px ' left='80px' src="./project/logo/phosphor-icons_logo.png"/> -->
   <img height =' 100px ' left='80px' src="./project/logo/lucide-react_logo.svg"/>
   <img height =' 100px ' left='80px' src="./project/logo/nativebase_logo.svg" />
   <br>

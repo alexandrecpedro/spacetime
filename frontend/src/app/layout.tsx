@@ -4,14 +4,13 @@ import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
 } from 'next/font/google'
-import { NextFontWithVariable } from 'next/dist/compiled/@next/font'
 
-const roboto: NextFontWithVariable = Roboto({
+const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
 })
 
-const baiJamjuree: NextFontWithVariable = BaiJamjuree({
+const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
   weight: '700',
   variable: '--font-bai-jamjuree',

@@ -4,7 +4,7 @@
 <br>
 
 <div align = 'center' justify-content = 'space-around' >
-  <img width="1604" alt=" NLW Spacetime Time Capsule - Desktop" src="./project/screens/screen1.png">
+  <img width="1604" alt="NLW Spacetime Time Capsule - Desktop" src="./project/screens/screen1.png">
 </div>
 <br>
 <div align = 'center' justify-content = 'space-around' >
@@ -212,14 +212,6 @@ The following tools were used in building the project:<br><br>
                 <li>npx expo install react-native-safe-area-context</li>
               </ul>
             </li>
-            <li>Install React Navigation on project:
-              <ul>
-                <li>npx expo install @react-navigation/native</li>
-                <li>npx expo install react-native-screens</li>
-                <li>npx expo install react-native-safe-area-context</li>
-                <li>npx expo install @react-navigation/native-stack</li>
-              </ul>
-            </li>
             <li>Start the development server: npx expo start</li>
             <li>Configure the Expo Go on a mobile device or use an emulator</li>
             <li>Open the app on a mobile device:
@@ -253,7 +245,6 @@ The following tools were used in building the project:<br><br>
                   </ol>
                 </li>
                 <li>Open Prisma Studio: npx prisma studio</li>
-                <!-- <li>Install Prisma Entity Relationship Diagram Generator: npm i -D prisma-erd-generator @mermaid-js/mermaid-cli</li> -->
                 <li>Create Seed: ./prisma/seed.ts</li>
                 <li>Run seed: npx prisma db seed</li>
               </ul>
@@ -261,7 +252,7 @@ The following tools were used in building the project:<br><br>
           </ul>
         </li>
         <li>Zod: npm i zod</li>
-        <li>Memory CRUD
+        <li>Memory CRUD: ./src/routes/memories.ts
           <ul>
             <li>List</li>
             <li>Create</li>
@@ -271,9 +262,7 @@ The following tools were used in building the project:<br><br>
         </li>
         <li>Cors library (Protection for non-desirable access) 
           <ul>
-            <!-- <li> npm i @types/cors -D </li>
-            <li> npm i @types/cors </li> -->
-            <li> npm i @fastify/cors </li>
+            <li>Install CORS: npm i @fastify/cors</li>
           </ul>
         </li>
         <li &nbsp;><b>Frontend project</b>
@@ -290,10 +279,6 @@ The following tools were used in building the project:<br><br>
                 <li>Blur background and Stripes: ./tailwind.config.js</li>
                 <li>Convert a svg file code to React component: https://svg2jsx.com/</li>
                 <li>Install Lucide-React icon plugin: npm i lucide-react</li>
-                <li>Empty memory list</li>
-                <li>User profile</li>
-                <li>Hero section</li>
-                <li>Copyright</li>
               </ul>
             </li>
           </ul>
@@ -330,79 +315,101 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;> 
         <li &nbsp;><b>Backend project</b>
           <ul>
-            <li>Set routes: ./src/routes.ts</li>
+            <li>Environment variables
+              <ol>
+                <li>Install package: npm i dotenv -D</li>
+                <li>Github OAuth variables: ./.env</li>
+                <li>Import dotenv/config at ./src/server.ts</li>
+              </ol>
+            </li>
+            <li>Axios: npm i axios</li>
+            <li>JWT: npm i @fastify/jwt</li>
+            <li>Routes:
+              <ul>
+                <li>Auth route: ./src/routes/auth.ts</li>
+                <li>Athenticated routes
+                  <ul>
+                    <li>Set global type: ./src/auth.d.ts</li>
+                    <li>Set auth require: ./src/routes/memoriesRoutes.ts</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>File upload route</li>
+            <li>Static files URL</li>
           </ul>
         </li>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Create feature: modal
-              <ul>
-                <li>Install Radix-UI: npm i @radix-ui/react-dialog </li>
-                <li>Install Radix-UI: npm i @radix-ui/react-popover </li>
-                <li>Install CLSX: npm i clsx </li>
-              </ul>
+            <li>Authentication:
+              <ol>
+                <li>Auth flow
+                  <div align="center">
+                    <img width="900" alt="Github OAuth Flow" src="./project/screens/GithubAuthFlow.png">
+                  </div>
+                </li>
+                <li>Github OAuth settings
+                  <ol>
+                    <li>Create an application at http://github.com/settings/developers</li>
+                    <li>Set environment variables at: ./.env.local</li>
+                  </ol>
+                </li>
+                <li>Getting Gihub code web</li>
+              </ol>
             </li>
-            <li>Get form data</li>
-            <li>Day detail popover</li>
-            <li>Synchronize completed habit</li>
+            <li>Set components
+              <ol>
+                <li>Copyright: ./src/components/Copyright.tsx</li>
+                <li>Empty memory list: ./src/components/EmptyMemories.tsx</li>
+                <li>Hero section: ./src/components/Hero.tsx</li>
+                <li>SignIn: ./src/components/SignIn.tsx</li>
+              </ol>
+            </li>
+            <li>Axios: npm i axios</li>
+            <li>Saving token at cookies
+              <ol>
+                <li>JWT lib: npm i jwt-decode</li>
+                <li>Set auth lib: ./src/lib/auth.ts</li>
+              </ol>
+            </li>
+            <li>User profile
+              <ol>
+                <li>Next Config: ./next.config.js</li>
+                <li>Component: ./src/components/Profile.tsx</li>
+                <li>Set profile on home: ./src/app/page.tsx</li>
+              </ol>
+            </li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Install Linear Gradient libary: npx expo install expo-linear-gradient</li>
-            <li>Create components: Loading </li>
-            <li>Create screens: StatusBar</li>
-            <li>React Native Phosphor Icon Library: npm install --save phosphor-react-native</li>
-            <li>Use UI Icons
-              <ul>
-                <li>Vector-Icons (Expo): MaterialIcons</li>
-                <li>Phosphor Icon React Native: CheckBox </li>
-                <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
-              </ul>
+            <li>Install Expo-Auth-Session / Expo Crypto: npx expo install expo-auth-session expo-crypto</li>
+            <li>Set Github OAuth (Expo)</li>
+            <li>Get Github code mobile: ./App.tsx</li>
+            <li>Save token at secure store
+              <ol>
+                <li>Axios: npm i axios</li>
+                <li>Expo Secure Store: npx expo install expo-secure-store</li>
+                <li>Implementing: ./App.tsx</li>
+              </ol>
             </li>
-            <li>Habit screen: ./src/screens/Habit.tsx
+            <li>User navigation
               <ul>
-                <li>Register a new habit</li>
-                <li>Show habit details</li>
-              </ul>
-            </li>
-            <li>Implementing Navigation
-              <ul>
-                <li>Create app routes
+                <li>Install React Navigation / Expo Router on project:
                   <ul>
-                    <li>Native Stack Navigator: ./src/routes/app.routes.tsx</li>
-                    <li>Navigation Strategy: ./src/routes/index.tsx</li>
-                    <li>Comunnicate to TS which routes are available: ./src/@types/navigation.d.ts</li>
+                    <li>npx expo install expo-router</li>
+                    <li>npx expo install expo-linking</li>
+                    <li>npx expo install expo-constants</li>
+                    <li>npx expo install expo-status-bar</li>
+                    <li>npx expo install react-native-screens</li>
+                    <li>npx expo install react-native-safe-area-context</li>
                   </ul>
                 </li>
-                <li>Navigate to register screen: ./src/screens/New.tsx</li>
-                <li>Set navigation routes types</li>
-                <li>Navigate to habit screen: ./src/screens/Habit.tsx</li>
+                <li>Create and set App file: ./app/index.tsx</li>
+                <li>Use Expo Router</li>
               </ul>
             </li>
-            <li>Create register habits interface
-              <ul>
-                <li>Create components: BackButton, Checkbox</li>
-                <li>Implementing back button at register screen</li>
-                <li>New habit input</li>
-                <li>List a checkbox for each day of the week</li>
-                <li>Create the check/uncheck checkbox function</li>
-                <li>Confirm button</li>
-                <li>Use ScrollView to enable scrolling</li>
-              </ul>
-            </li>
-            <li>Create the daily habits interface
-              <ul>
-                <li>Navigate to habit screen</li>
-                <li>Use ScrollView to enable scrolling</li>
-                <li>Reuse the BackButton component</li>
-                <li>Passing and retrieving date as route parameter</li>
-                <li>Format and display the day of the week</li>
-                <li>Format and display the day/month</li>
-                <li>Create ProgressBar component</li>
-                <li>Use Checkbox component</li>
-              </ul>
-            </li>
+            <li>Customize app initial route</li>
           </ul>
         </li>
         <li &nbsp;><b>Testing</b>

@@ -1,17 +1,17 @@
-import { FastifyInstance, FastifyRequest } from 'fastify'
-import axios, { AxiosResponse } from 'axios'
+import { FastifyInstance } from 'fastify'
+import axios from 'axios'
 import { z } from 'zod'
 import { prisma } from '../lib/prisma'
 
 export async function authRoutes(app: FastifyInstance) {
-  app.post('/register', async (request: FastifyRequest) => {
-    const bodySchema: z.ZodObject<any> = z.object({
+  app.post('/register', async (request) => {
+    const bodySchema = z.object({
       code: z.string(),
     })
 
     const { code } = bodySchema.parse(request.body)
 
-    const accessTokenResponse: AxiosResponse<any, any> = await axios.post(
+    const accessTokenResponse = await axios.post(
       'https://github.com/login/oauth/access_token',
       null,
       {
@@ -28,16 +28,13 @@ export async function authRoutes(app: FastifyInstance) {
 
     const { access_token } = accessTokenResponse.data
 
-    const userResponse: AxiosResponse<any, any> = await axios.get(
-      'https://api.github.com/user',
-      {
-        headers: {
-          Authorization: `Bearer ${access_token}`,
-        },
+    const userResponse = await axios.get('https://api.github.com/user', {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
       },
-    )
+    })
 
-    const userSchema: z.ZodObject<any> = z.object({
+    const userSchema = z.object({
       id: z.number(),
       login: z.string(),
       name: z.string(),
@@ -63,7 +60,7 @@ export async function authRoutes(app: FastifyInstance) {
       })
     }
 
-    const token: string = app.jwt.sign(
+    const token = app.jwt.sign(
       {
         name: user.name,
         avatarUrl: user.avatarUrl,

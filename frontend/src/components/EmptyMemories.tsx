@@ -2,9 +2,9 @@ export function EmptyMemories() {
   return (
     <div className="flex flex-1 items-center justify-center">
       <p className="w-[360px] text-center leading-relaxed">
-        You have not registered any memories yet, start{' '}
+        Você ainda não registrou nenhuma lembrança, começa{' '}
         <a href="" className="underline hover:text-gray-50">
-          create now
+          criar agora
         </a>
         !
       </p>

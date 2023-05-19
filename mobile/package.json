@@ -15,6 +15,7 @@
     "@types/react": "~18.0.27",
     "@types/react-native": "^0.72.0",
     "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
     "expo": "~48.0.15",
     "expo-auth-session": "~4.0.3",
     "expo-constants": "~14.2.1",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.2.1",
     "eslint": "^8.40.0",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "react-native-svg-transformer": "^1.0.0",

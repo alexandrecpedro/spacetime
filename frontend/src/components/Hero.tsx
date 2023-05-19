@@ -1,5 +1,7 @@
-import nlwLogo from '../assets/nlw-spacetime-logo.svg'
 import Image from 'next/image'
+
+import nlwLogo from '../assets/nlw-spacetime-logo.svg'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -8,20 +10,20 @@ export function Hero() {
 
       <div className="max-w-[420px] space-y-1">
         <h1 className="text-5xl font-bold leading-tight text-gray-50">
-          Your time capsule
+          Sua cápsula do tempo
         </h1>
         <p className="text-lg leading-relaxed">
-          Collect memorable moments from your journey and share (if you like)
-          with the world!
+          Colecione momentos marcantes da sua jornada e compartilhe (se quiser)
+          com o mundo!
         </p>
       </div>
 
-      <a
+      <Link
         className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
-        href=""
+        href="/memories/new"
       >
-        REGISTER MEMORY
-      </a>
+        CADASTRAR LEMBRANÇA
+      </Link>
     </div>
   )
 }

@@ -330,8 +330,19 @@ The following tools were used in building the project:<br><br>
                 </li>
               </ul>
             </li>
-            <li>File upload route</li>
-            <li>Static files URL</li>
+            <li>File upload
+              <ul>
+                <li>Fastify Multipart: npm i @fastify/multipart</li>
+                <li>Route: ./src/routes/upload.ts</li>
+                <li>Update server file: ./src/server.ts</li>
+              </ul>
+            </li>
+            <li>Static files URL
+              <ul>
+                <li>Fastify Static: npm i @fastify/static</li>
+                <li>Set: ./src/server.ts</li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li &nbsp;><b>Frontend project</b>
@@ -404,7 +415,6 @@ The following tools were used in building the project:<br><br>
                 <li>Use Expo Router</li>
               </ul>
             </li>
-            <li>Customize app initial route</li>
           </ul>
         </li>
         <li &nbsp;><b>Testing</b>
@@ -419,57 +429,25 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>Use Radix UI Components 
+            <li>Routes
               <ul>
-                <li>Checkbox = npm install @radix-ui/react-checkbox</li>
-                <li>Select = npm install @radix-ui/react-select</li>
-                <li>Toggle Group = npm install @radix-ui/react-toggle-group</li>
+                <li>Set route layout: ./src/app/layout.tsx</li>
+                <li>Logout route: ./src/app/api/auth/logout/route.ts</li>
               </ul>
             </li>
-            <li>Get form data</li>
-            <li>Syncing completed habits</li>
-            <li>Connection with back-end
-              <ul>
-                <li>Send modal values to API (backend service)
-                  <ul>
-                    <li>Axios: npm install axios</li>
-                  </ul>
-                </li>
-                <li>Set HTTP client</li>
-                <li>Fetching API summary</li>
-                <li>Using API data at Popover</li>
-                <li>Register a new habit</li>
-              </ul>
-            </li>
+            <li>New memory page: ./src/app/memories/new/page.tsx</li>
+            <li>Auth middleware: ./src/middleware.ts</li>
+            <li>Create new memory: npm i -D @tailwindcss/forms</li>
+            <li>Media Preview</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
             <li>Starting the server</li>
-            <li>Installing the Axios
-              <ul>
-                <li>Set server access</li>
-              </ul>
-            </li>
-            <li>Home
-              <ul>
-                <li>Listing the summary</li>
-                <li>Using Loading component</li>
-                <li>Passing properties in HabitDay component
-                  <ul>
-                    <li>Creating a function to calculate the percentage of progress</li>
-                    <li>Using clsx to use conditional classes: npm i --save clsx</li>
-                  </ul>
-                </li>
-                <li>New
-                  <ul>
-                    <li>Getting form data</li>
-                    <li>Registering and sending new habit to API</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
             <li>Connect with API (backend service)</li>
+            <li>Set routes layout: ./app/_layout.tsx</li>
+            <li>Customize app initial route: ./app/index.tsx</li>
+            <li>New memory page: ./app/new.tsx</li>
           </ul>
         </li>
       </ul> 

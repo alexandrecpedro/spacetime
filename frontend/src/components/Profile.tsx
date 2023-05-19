@@ -1,13 +1,8 @@
 import { getUser } from '@/lib/auth'
 import Image from 'next/image'
 
-interface IUser {
-  name: string
-  avatarUrl: string
-}
-
 export function Profile() {
-  const { name, avatarUrl }: IUser = getUser()
+  const { name, avatarUrl } = getUser()
 
   return (
     <div className="flex items-center gap-3 text-left">
@@ -15,14 +10,17 @@ export function Profile() {
         src={avatarUrl}
         width={40}
         height={40}
-        alt={name}
+        alt=""
         className="h-10 w-10 rounded-full"
       />
 
       <p className="max-w-[140px] text-sm leading-snug">
         {name}
-        <a href="" className="block text-red-400 hover:text-red-300">
-          Wanna exit
+        <a
+          href="/api/auth/logout"
+          className="block text-red-400 hover:text-red-300"
+        >
+          Quero sair
         </a>
       </p>
     </div>

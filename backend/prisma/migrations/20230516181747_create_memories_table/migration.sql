@@ -21,7 +21,7 @@ CREATE TABLE "Memory" (
 PRAGMA foreign_keys=OFF;
 CREATE TABLE "new_User" (
     "id" TEXT NOT NULL PRIMARY KEY,
-    "githubId" INTEGER NOT NULL,
+    "githubId" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "login" TEXT NOT NULL,
     "avatarUrl" TEXT NOT NULL

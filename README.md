@@ -70,7 +70,6 @@ The following tools were used in building the project:<br><br>
 |        Navigation between pages (Mobile)         |     REACT NAVIGATION      |  https://reactnavigation.org/  |
 |                Database (Backend)                |          SQLITE           | https://www.sqlite.org/index.html            |
 |  Promise based HTTP client - browser & Node.js   |           AXIOS           |      https://axios-http.com/       |
-|             UI Components for React              |         RADIX-UI          |     https://www.radix-ui.com/         |
 |  Node.js and TypeScript ORM (Backend, Database)  |          PRISMA           |      https://www.prisma.io/            |
 <br>
 
@@ -78,7 +77,6 @@ The following tools were used in building the project:<br><br>
   <h3>Backend | API</h3>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
   <img height =' 100px ' left='80px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-  <!-- <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" /> -->
   <br>
   <img height =' 100px ' left='80px' src="./project/logo/fastify_logo.png" />
   <br>

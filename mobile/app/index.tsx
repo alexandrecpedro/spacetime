@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { useEffect } from 'react'
 import { useRouter } from 'expo-router'
 import { Text, TouchableOpacity, View } from 'react-native'
@@ -10,8 +11,7 @@ import { api } from '../src/lib/api'
 const discovery = {
   authorizationEndpoint: 'https://github.com/login/oauth/authorize',
   tokenEndpoint: 'https://github.com/login/oauth/access_token',
-  revocationEndpoint:
-    'https://github.com/settings/connections/applications/d26f194cc5d5132a51be',
+  revocationEndpoint: `https://github.com/settings/connections/applications/${process.env.GITHUB_CLIENT_ID}`,
 }
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
 
   const [, response, signInWithGithub] = useAuthRequest(
     {
-      clientId: 'd26f194cc5d5132a51be',
+      clientId: `${process.env.GITHUB_CLIENT_ID}`,
       scopes: ['identity'],
       redirectUri: makeRedirectUri({
         scheme: 'nlwspacetime',

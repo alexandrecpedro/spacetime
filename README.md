@@ -437,8 +437,7 @@ The following tools were used in building the project:<br><br>
             </li>
             <li>New memory page: ./src/app/memories/new/page.tsx</li>
             <li>Auth middleware: ./src/middleware.ts</li>
-            <li>Create new memory: npm i -D @tailwindcss/forms</li>
-            <li>Media Preview</li>
+            <li>Tailwind forms: npm i -D @tailwindcss/forms</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
@@ -457,40 +456,35 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;>
         <li &nbsp;><b>Frontend project</b>
           <ul>
-            <li>List possible habits of the day
+            <li>Create new memory
               <ul>
-                <li>HabitsList component: ./src/components/HabitsList.tsx</li>
+                <li>MediaPicker: ./src/components/MediaPicker.tsx</li>
               </ul>
             </li>
-            <li>Disabling on past dates</li>
-            <li>Syncing completed habits</li>
-            <li>Adding transitions and focus</li>
+            <li>Media Preview
+              <ul>
+                <li>New Memory Form = ./src/components/NewMemoryForm.tsx</li>
+                <li>JS-Cookie: npm i js-cookie</li>
+                <li>JS-Cookie for TS: npm i -D @types/js-cookie</li>
+              </ul>
+            </li>
+            <li>List layout</li>
+            <li>Search memories from API</li>
           </ul>
         </li>
         <li &nbsp;><b>Mobile project</b>
           <ul>
-            <li>Habit
+            <li>Pick an Image
               <ul>
-                <li>Fetch the habits of the selected day in the API</li>
-                <li>Display the list of habits of the day</li>
-                <li>Create empty habit list component: ./src/components/HabitsEmpty.tsx</li>
-                <li>Check if selected date is passed and show message you can't edit</li>
-                <li>Show the progress</li>
+                <li>Expo Image Picker: npx expo install expo-image-picker</li>
+                <li>Choose an image from gallery</li>
+                <li>Image preview</li>
               </ul>
             </li>
-            <li>Send the habit status (performed or not) to the API
-              <ul>
-                <li>Using the useFocusEffect to update the home when returning</li>
-              </ul>
-            </li>
-            <li>Animation
-              <ul>
-                <li>Getting to know React Native Reanimated</li>
-                <li>Installing and configuring Reanimated in the application: npx expo install react-native-reanimated</li>
-                <li>Animate the ProgressBar</li>
-                <li>Animate the Checkbox</li>
-              </ul>
-            </li>
+            <li>Create new memory: ./app/new.tsx</li>
+            <li>Logout button</li>
+            <li>List layout</li>
+            <li>Search memories from API</li>
             <li>Testing all</li>
           </ul>
         </li>

@@ -403,7 +403,7 @@ google-services.json
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
-.history
+**/.history/
 .ionide
 
 ### Windows ###
